@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/module.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/state.css">
+    <!-- CSS for JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="/assets/css/library/modal-video.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.8.3/css/lightgallery.css">
+    <!-- CSS Icons -->
+    <script src="https://kit.fontawesome.com/0e0d5749fc.js" crossorigin="anonymous"></script>
+    <title>Movies</title>
+</head>
+
+<body class="bg-principal">
+    <!-- Header -->
+    <header class="container spacing-element">
+        <div class="nav">
+            <div class="menu">
+                <svg class="menu-btn" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <ellipse ry="20" rx="20" cy="22.5" cx="22.5" stroke-width="1" stroke="rgba(255,255,255,0.5)" fill="transparent" />
+                        <ellipse ry="20" rx="20" class="circle" cy="22.5" cx="22.5" stroke-width="1" stroke="#fff" fill="transparent" /> 
+                    </g>
+                </svg>
+                <div class="menu-btn__content">
+                    <div class="hamburger">
+                        <div class="btn-line"></div>
+                        <div class="btn-line"></div>
+                        <div class="btn-line"></div>
+                    </div>
+                    <span class="menu-btn__lbl">Menu</span>
+                </div>
+            </div>
+            <h1 class="nav-title">Movies</h1>
+            <div class="other-btns">
+                <div class="icon__search">
+                    <svg class="btn__search" xmlns="http://www.w3.org/2000/svg">
+                      <g>
+                        <ellipse ry="20" rx="20" cy="22.5" cx="22.5" stroke-width="1" stroke="rgba(255,255,255,0.5)" fill="transparent" />
+                        <ellipse ry="20" rx="20" class="circle" cy="22.5" cx="22.5" stroke-width="1" stroke="#fff" fill="transparent" />
+                      </g>
+                    </svg>
+                    <input type="text" name="search" placeholder="Search" class="search-input">
+                </div>
+                <div class="icon__newsletter">
+                    <svg class="btn__newsletter" xmlns="http://www.w3.org/2000/svg">
+                      <g>
+                        <ellipse ry="20" rx="20" cy="22.5" cx="22.5" stroke-width="1" stroke="rgba(255,255,255,0.5)" fill="transparent" />
+                        <ellipse ry="20" rx="20" class="circle" cy="22.5" cx="22.5" stroke-width="1" stroke="#fff" fill="transparent" />
+                      </g>
+                    </svg>
+                    <span class="btn-newsletter__lbl">Get More</span>
+                </div>
+            </div>
+    </header>
+    <!-- Section 1 -->
+    <section class="movie wrapper">
+        <div class="movie__trailer spacing-element">
+            <button class="btn__play-video"></button>
+            <span class="play-video__text">Watch Trailer</span>
+        </div>
+        <div class="movie__info spacing-element">
+            <div class="movie__content">
+                <h2 class="name-movie">The Film</h2>
+                <p class="description">Available Now on Blu-ray<sup>TM</sup>, DVD, and Digital</p>
+                <button class="btn__secondary btn__buy-now" type="button">Buy Now</button>
+            </div>
+            <a href="#movie-available">
+                <div class="cover-film">
+                    <img class="img-cover-film" src="/assets/img/cover-film.png" alt="cover-film">
+                </div>
+            </a>
+        </div>
+        <div class="movie__social-media">
+            <div class="social-media">
+                <span class="lbl lbl-social" for="social-media">Follow us</span>
+                <div class="box-flex">
+                    <div class="btn__social-media">
+                        <svg class="btn__facebook" xmlns="http://www.w3.org/2000/svg">
+                          <g>
+                            <ellipse ry="20" rx="20" cy="22.5" cx="22.5" stroke-width="1" stroke="rgba(255,255,255,0.5)" fill="transparent" />
+                            <ellipse ry="20" rx="20" class="circle" cy="22.5" cx="22.5" stroke-width="1" stroke="#fff" fill="transparent" />
+                          </g>
+                        </svg>
+                        <span class="icon__facebook"><i class="fab fa-facebook-f"></i></span>
+                    </div>
+                    <div class="btn__social-media">
+                        <svg class="btn__twitter" xmlns="http://www.w3.org/2000/svg">
+                          <g>
+                            <ellipse ry="20" rx="20" cy="22.5" cx="22.5" stroke-width="1" stroke="rgba(255,255,255,0.5)" fill="transparent" />
+                            <ellipse ry="20" rx="20" class="circle" cy="22.5" cx="22.5" stroke-width="1" stroke="#fff" fill="transparent" />
+                          </g>
+                        </svg>
+                        <span class="icon__twitter"><i class="fab fa-twitter"></i></span>
+                    </div>
+                    <div class="btn__social-media">
+                        <svg class="btn__instagram" xmlns="http://www.w3.org/2000/svg">
+                          <g>
+                            <ellipse ry="20" rx="20" cy="22.5" cx="22.5" stroke-width="1" stroke="rgba(255,255,255,0.5)" fill="transparent" />
+                            <ellipse ry="20" rx="20" class="circle" cy="22.5" cx="22.5" stroke-width="1" stroke="#fff" fill="transparent" />
+                          </g>
+                        </svg>
+                        <span class="icon__instagram"><i class="fab fa-instagram"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="box-input">
+                <span class="lbl lbl-input">Get Updates</span>
+                <input type="email" name="search" placeholder="Enter Email Adress" class="secondary-search-input">
+                <button class="btn__primary btn__send"></button>
+            </div>
+        </div>
+        <div class="btn__scroll">
+            <svg class="btn__scroll-down" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <ellipse ry="20" rx="20" cy="22.5" cx="22.5" stroke-width="1" stroke="rgba(255,255,255,0.5)" fill="transparent" />
+                <ellipse ry="20" rx="20" class="circle" cy="22.5" cx="22.5" stroke-width="1" stroke="#fff" fill="transparent" />
+              </g>
+            </svg>
+            <span class="lbl__scroll-down">Scroll for More Info</span>
+        </div>
+    </section>
+    <!-- Section 2 -->
+    <section class="movie-about wrapper">
+        <div class="movie__synopsis spacing-element">
+            <img class="img-synopsis" src="/assets/img/about-film.jpg" alt="about">
+            <div class="movie-about__content spacing-element">
+                <h2 class="content-header">About</h2>
+                <h3 class="content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum.</h3>
+                <p class="content-description">
+                    Duis et rutrum neque. Nunc interdum rutrum dolor sed convallis. Maecenas dolor elit, convallis blandit orci a, venenatis feugiat velit. Mauris semper nisl eu ultricies viverra. Donec quis lectus nec arcu scelerisque sodales.
+                </p>
+                <button class="btn__read-more">Read More</button>
+                <span class="lbl-release">Release date: March 20 2020</span>
+            </div>
+        </div>
+        <div class="movie__casting">
+            <div class="movie__cast">
+                <h2 class="content-header">Cast</h2>
+                <ul class="casting">
+                    <li class="cast__name">Name Lastname</li>
+                    <li class="cast__name">Name Lastname</li>
+                    <li class="cast__name">Name Lastname</li>
+                    <li class="cast__name">Name Lastname</li>
+                    <li class="cast__name">Name Lastname</li>
+                    <li class="cast__name">Name Lastname</li>
+                    <li class="cast__name">Name Lastname</li>
+                    <li class="cast__name">Name Lastname</li>
+                    <li class="cast__name">Name Lastname</li>
+                    <li class="cast__name">Name Lastname</li>
+                    <li class="cast__name">Name Lastname</li>
+                </ul>
+
+            </div>
+            <button class="btn__read-more btn__cast">Read More</button>
+            <img class="img-cast" src="/assets/img/synopsy-film.jpg" alt="synopsis">
+        </div>
+    </section>
+    <!-- Section 3 -->
+    <section class="movie-available wrapper wrapper--tablet" id="movie-available">
+        <div class="available spacing-element">
+            <h2 class="content-header available-header spacing-element">Available Now</h2>
+            <img class="cover-film--mobile" src="/assets/img/cover-film.png" alt="cover-film-mobile">
+            <img class="cover-film--tablet" src="/assets/img/cover-film-large.png" alt="cover-film-tablet">
+        </div>
+        <div class="platforms">
+            <ul class="platforms__list">
+                <li class="platform">Digital <button class="btn__buy-now" type="button">Buy Now</button></li>
+                <li class="platform"><span>Blu-Ray<sup>TM<sup></sup></span> <button class="btn__buy-now" type="button">Buy Now</button></li>
+                <li class="platform">DVD <button class="btn__buy-now" type="button">Buy Now</button></li>
+            </ul>
+        </div>
+
+    </section>
+    <!-- Section 4 -->
+    <section class="movie-videos wrapper">
+        <h2 class="movie-videos__header">Watch THE FILM Videos</h2>
+        <div class="nav-slides">
+            <i class="fas fa-long-arrow-alt-left fa-2x arrow-prev"></i>
+            <i class="fas fa-long-arrow-alt-right fa-2x arrow-next"></i>
+        </div>
+        <div class="movie-videos__slide">
+            <div>
+                <a class="video-link" data-video-id="jaY98VY5qwU" href="">
+                    <div class="video-card">
+                        <div class="video-card__content">
+                            <img src="/assets/img/video-thumb.jpg" alt="Thumb" class="video-card__thumb">
+                            <div class="btn-playVideo"></div>
+                        </div>
+                    </div>
+                    <h3 class="video-card__title">The FILM Official Trailer</h3>
+                </a>
+            </div>
+            <div>
+                <a class="video-link" data-video-id="jaY98VY5qwU" href="">
+                    <div class="video-card">
+                        <div class="video-card__content">
+                            <img src="/assets/img/video-thumb.jpg" alt="" class="video-card__thumb">
+                            <div class="btn-playVideo"></div>
+                        </div>
+                    </div>
+                    <h3 class="video-card__title">The FILM Official Trailer</h3>
+                </a>
+            </div>
+            <div>
+                <a class="video-link" data-video-id="jaY98VY5qwU" href="">
+                    <div class="video-card">
+                        <div class="video-card__content">
+                            <img src="/assets/img/video-thumb.jpg" alt="" class="video-card__thumb">
+                            <div class="btn-playVideo"></div>
+                        </div>
+                    </div>
+                    <h3 class="video-card__title">The FILM Official Trailer</h3>
+                </a>
+            </div>
+            <div>
+                <a class="video-link" data-video-id="jaY98VY5qwU" href="">
+                    <div class="video-card">
+                        <div class="video-card__content">
+                            <img src="/assets/img/video-thumb.jpg" alt="" class="video-card__thumb">
+                            <div class="btn-playVideo"></div>
+                        </div>
+                    </div>
+                    <h3 class="video-card__title">The FILM Official Trailer</h3>
+                </a>
+            </div>
+            <div>
+                <a class="video-link" data-video-id="jaY98VY5qwU" href="">
+                    <div class="video-card">
+                        <div class="video-card__content">
+                            <img src="/assets/img/video-thumb.jpg" alt="" class="video-card__thumb">
+                            <div class="btn-playVideo"></div>
+                        </div>
+                    </div>
+                    <h3 class="video-card__title">The FILM Official Trailer</h3>
+                </a>
+            </div>
+            <div>
+                <a class="video-link" data-video-id="jaY98VY5qwU" href="/">
+                    <div class="video-card">
+                        <div class="video-card__content">
+                            <img src="/assets/img/video-thumb.jpg" alt="" class="video-card__thumb">
+                            <div class="btn-playVideo"></div>
+                        </div>
+                    </div>
+                    <h3 class="video-card__title">The FILM Official Trailer</h3>
+                </a>
+            </div>
+            <div>
+                <a class="video-link" data-video-id="jaY98VY5qwU" href="">
+                    <div class="video-card">
+                        <div class="video-card__content">
+                            <img src="/assets/img/video-thumb.jpg" alt="" class="video-card__thumb">
+                            <div class="btn-playVideo"></div>
+                        </div>
+                    </div>
+                    <h3 class="video-card__title">The FILM Official Trailer</h3>
+                </a>
+            </div>
+            <div>
+                <a class="video-link" data-video-id="jaY98VY5qwU" href="">
+                    <div class="video-card">
+                        <div class="video-card__content">
+                            <img src="/assets/img/video-thumb.jpg" alt="" class="video-card__thumb">
+                            <div class="btn-playVideo"></div>
+                        </div>
+                    </div>
+                    <h3 class="video-card__title">The FILM Official Trailer</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Section 5 -->
+    <section class="movie-gallery wrapper">
+        <h2 class="movie-videos__header">GALLERY</h2>
+        <ul class="lightgallery">
+            <li class="lightgallery__item" data-src="/assets/img/gallery-1.jpg">
+                <img class="gallery-image" src="/assets/img/gallery1-poster.jpg" />
+                <button class="icon-maximize">
+                        <div class="maximize">
+                          <i class="fas fa-arrow-left"></i>
+                          <i class="fas fa-arrow-right"></i>
+                        </div>
+                </button>
+            </li>
+            <li class="lightgallery__item" data-src="/assets/img/gallery-2.jpg">
+                <img class="gallery-image " src="/assets/img/gallery2-poster.jpg " />
+                <button class="icon-maximize ">
+                        <div class="maximize ">
+                          <i class="fas fa-arrow-left "></i>
+                          <i class="fas fa-arrow-right "></i>
+                        </div>
+                </button>
+            </li>
+            <li class="lightgallery__item" data-src="/assets/img/gallery-3.jpg">
+                <img class="gallery-image " src="/assets/img/gallery3-poster.jpg " />
+                <button class="icon-maximize ">
+                        <div class="maximize ">
+                          <i class="fas fa-arrow-left "></i>
+                          <i class="fas fa-arrow-right "></i>
+                        </div>
+                </button>
+            </li>
+            <li class="lightgallery__item" data-src="/assets/img/gallery-4.jpg">
+                <img class="gallery-image " src="/assets/img/gallery4-poster.jpg " />
+                <button class="icon-maximize ">
+                        <div class="maximize ">
+                          <i class="fas fa-arrow-left "></i>
+                          <i class="fas fa-arrow-right "></i>
+                        </div>
+                </button>
+            </li>
+            <li class="lightgallery__item" data-src="/assets/img/gallery-5.jpg">
+                <img class="gallery-image " src="/assets/img/gallery5-poster.jpg " />
+                <button class="icon-maximize ">
+                        <div class="maximize ">
+                          <i class="fas fa-arrow-left "></i>
+                          <i class="fas fa-arrow-right "></i>
+                        </div>
+                </button>
+            </li>
+            <li class="lightgallery__item" data-src="/assets/img/gallery-6.jpg">
+                <img class="gallery-image " src="/assets/img/gallery6-poster.jpg " />
+                <button class="icon-maximize ">
+                        <div class="maximize ">
+                          <i class="fas fa-arrow-left "></i>
+                          <i class="fas fa-arrow-right "></i>
+                        </div>
+                </button>
+            </li>
+        </ul>
+        <div class="nav-gallery">
+            <i class="fas fa-long-arrow-alt-left fa-2x arrow-prev--gallery"></i>
+            <i class="fas fa-long-arrow-alt-right fa-2x arrow-next--gallery"></i>
+        </div>
+    </section>
+    <!-- Section 6 -->
+    <section class="other-movies wrapper">
+        <h2 class="movie-videos__header">You May Also Like</h2>
+        <div class="slide-movies">
+            <div class="slide-movies__item">
+                <a href="">
+                    <div class="cover-movie">
+                        <div class="cover-movie__content">
+                            <img src="/assets/img/cover-film.png" alt="Cover Movie" class="cover-movie__image">
+                        </div>
+                        <h3 class="cover-movie__name">Name Movie</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="slide-movies__item">
+                <a href="">
+                    <div class="cover-movie">
+                        <div class="cover-movie__content">
+                            <img src="/assets/img/cover-film.png" alt="Cover Movie" class="cover-movie__image">
+                        </div>
+                        <h3 class="cover-movie__name">Name Movie</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="slide-movies__item">
+                <a href="">
+                    <div class="cover-movie">
+                        <div class="cover-movie__content">
+                            <img src="/assets/img/cover-film.png" alt="Cover Movie" class="cover-movie__image">
+                        </div>
+                        <h3 class="cover-movie__name">Name Movie</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="slide-movies__item">
+                <a href="">
+                    <div class="cover-movie">
+                        <div class="cover-movie__content">
+                            <img src="/assets/img/cover-film.png" alt="Cover Movie" class="cover-movie__image">
+                        </div>
+                        <h3 class="cover-movie__name">Name Movie</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="slide-movies__item">
+                <a href="">
+                    <div class="cover-movie">
+                        <div class="cover-movie__content">
+                            <img src="/assets/img/cover-film.png" alt="Cover Movie" class="cover-movie__image">
+                        </div>
+                        <h3 class="cover-movie__name">Name Movie</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="slide-movies__item">
+                <a href="">
+                    <div class="cover-movie">
+                        <div class="cover-movie__content">
+                            <img src="/assets/img/cover-film.png" alt="Cover Movie" class="cover-movie__image">
+                        </div>
+                        <h3 class="cover-movie__name">Name Movie</h3>
+                    </div>
+                </a>
+            </div>
+    </section>
+
+    <script src="https://use.fontawesome.com/88b1fb54da.js"></script>
+    <script src="/assets/js/library/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="/assets/js/library/jquery-modal-video.min.js"></script>
+    <script src="/assets/js/slide-videos.js"></script>
+    <script src="/assets/js/slide-otherMovies.js"></script>
+    <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.14/js/lightgallery-all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <script src="/assets/js/gallery-image.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="/assets/js/animation-gsap.js"></script>
+
+</body>
+
+</html>
