@@ -1,0 +1,279 @@
+/* Hover Effects */
+
+.arrow-prev:hover,
+.arrow-prev--gallery:hover,
+.arrow-next:hover,
+.arrow-next--gallery:hover {
+  color: #c5feff;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+  .nav-slides,
+  .nav-gallery {
+    position: absolute;
+    right: 0;
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0px;
+  }
+  .nav-gallery {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+  }
+  /* Section 1 - Tablet */
+  .movie {
+    height: 60vh;
+  }
+  .movie__trailer {
+    position: absolute;
+    width: 80%;
+    bottom: 40%;
+    margin: 0 auto;
+  }
+  .btn__play-video {
+    margin-bottom: 1rem;
+  }
+  .play-video__text {
+    font-weight: 600;
+  }
+  .movie__info {
+    position: absolute;
+    margin: 0;
+  }
+  .movie__content {
+    align-items: end;
+  }
+  .name-movie {
+    height: 0px;
+    font-size: 36px;
+    text-transform: uppercase;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .description {
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .btn__buy-now {
+    transform: translateY(20px);
+    opacity: 0;
+    overflow: hidden;
+  }
+  .cover-book {
+    width: auto;
+    height: auto;
+    background: url(/assets/img/cover-film.png) no-repeat;
+    background-size: cover;
+  }
+  .movie__social-media {
+    position: absolute;
+    right: 5%;
+  }
+  .box-input {
+    align-items: end;
+  }
+  .social-media {
+    width: 200px;
+    align-items: flex-end;
+  }
+  .box-flex {
+    width: 80%;
+  }
+  /* Section 2 - Tablet */
+  .movie-about {
+    flex-direction: row-reverse;
+  }
+  .movie__synopsis,
+  .movie__casting {
+    position: relative;
+    flex-direction: column-reverse;
+    width: 50%;
+  }
+  .img-synopsis,
+  .img-cast {
+    display: block;
+    width: 100%;
+  }
+  .movie-about__content {
+    padding: 0rem 1rem;
+  }
+  .content-title {
+    margin: 2rem 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .content-description {
+    font-size: 14px;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .movie__cast {
+    height: 260px;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+  }
+  .casting {
+    margin: 2rem 0;
+  }
+  .cast__name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .btn__cast {
+    position: absolute;
+    bottom: 0;
+  }
+  /* Section 3 - Tablet */
+  .wrapper--tablet {
+    width: 90%;
+  }
+  .available {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .available-header {
+    margin: 0 auto;
+  }
+  .cover-film--mobile {
+    display: none;
+  }
+  .cover-film--tablet {
+    display: block;
+  }
+  .platforms {
+    position: absolute;
+    top: 30%;
+    right: 8%;
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* Header */
+  .nav-title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 42px;
+  }
+  .movie {
+    height: 70vh;
+  }
+  .movie__trailer {
+    display: flex;
+    position: relative;
+    bottom: 40%;
+    margin-bottom: 0;
+  }
+  .btn__play-video {
+    width: 172px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  .play-video__text {
+    font-size: 22px;
+  }
+  .movie__info {
+    justify-content: space-between;
+    width: 80%;
+    top: 38%;
+  }
+  .name-movie {
+    font-size: 60px;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .cover-film {
+    overflow: hidden;
+    border: 4px solid transparent;
+    transition: all 0.3s;
+  }
+  .cover-film:hover {
+    border: 4px solid #fff;
+    cursor: pointer;
+  }
+  .img-cover-film {
+    display: block;
+    opacity: 0;
+  }
+  .cover-film:hover .img-cover-film {
+    transform: scale(1.1);
+  }
+  .movie__social-media {
+    position: relative;
+    flex-direction: revert;
+    justify-content: space-between;
+    align-items: flex-end;
+    right: 0;
+  }
+  .social-media {
+    position: absolute;
+    height: 10vh;
+    right: 0;
+    margin: 0;
+  }
+  .box-input {
+    position: absolute;
+  }
+  .lbl-input {
+    overflow-x: hidden;
+    margin-left: 2rem;
+    opacity: 0;
+  }
+  .secondary-search-input {
+    opacity: 0;
+  }
+  .btn__send {
+    left: 0;
+    opacity: 0;
+  }
+  .btn__scroll {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .movie-about {
+    height: 900px;
+  }
+  .movie-about__content {
+    margin-bottom: 0rem;
+  }
+  .movie__synopsis,
+  .movie__casting {
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .movie__cast {
+    margin-bottom: 10rem;
+    padding: 0;
+  }
+  .content-header {
+    padding-left: 1rem;
+  }
+  .casting {
+    height: 300px;
+    padding: 1rem;
+    overflow: auto;
+    direction: rtl;
+  }
+  .btn__cast {
+    display: none;
+  }
+  .movie-available {
+    display: flex;
+    justify-content: center;
+  }
+  .available-header {
+    padding-left: 15rem;
+  }
+}

@@ -1,0 +1,71 @@
+/* Base.css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+i {
+    color: #fff;
+}
+
+sup {
+    font-size: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+input,
+select,
+textarea {
+    color: var(--clr-primary);
+}
+
+svg {
+    width: 44px;
+    height: 44px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-principal{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/img/bg-film.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+::placeholder {
+    font-weight: 600;
+    color: var(--clr-primary);
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Handle */
+ ::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+}
+/* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+    background: #c1c1c1;
+}

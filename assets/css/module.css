@@ -1,0 +1,30 @@
+.btn__primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 32px;
+    background-color: transparent;
+}
+
+.secondary-search-input {
+    display: none;
+    position: absolute;
+    right: 50%;
+    width: 171px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 32px;
+    background-color: rgba(51, 86, 135, 0.3);
+}
+
+.lbl {
+    font-weight: 600;
+}
+
+.nav-slides,
+.nav-gallery {
+    display: none;
+}
