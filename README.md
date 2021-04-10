@@ -21,6 +21,7 @@ Feito com base no site [Lionsgate](https://www.lionsgate.com/)
 [Clay Banks](https://unsplash.com/s/photos/couple?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 [Mayur Gala](https://unsplash.com/s/photos/couple?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 
+- Icone: [Freepik](https://www.freepik.com)
 
 - Fontes:  [Montserrat](https://fonts.google.com/specimen/Montserrat)
 
