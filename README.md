@@ -9,7 +9,7 @@
 * [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ## 💻 Projeto
-É um site de um autor de livro, contendo suas obras, vídeos do seu canal, sobre ele.
+Um site de filmes, com os principais titulos, trailers e analises.
 
 ## 🎨 Layout
 Feito com base no site [Lionsgate](https://www.lionsgate.com/)
